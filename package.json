@@ -1,0 +1,43 @@
+{
+  "name": "continuous-improvement-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio website demonstrating continuous improvement principles in web development",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "live-server --port=3000",
+    "optimize-images": "node image-optimizer.js",
+    "test-performance": "node performance-test.js",
+    "deploy": "npm run build && echo 'Deployment complete'"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "continuous-improvement",
+    "responsive",
+    "dark-mode",
+    "performance"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css": "^5.3.2",
+    "terser": "^5.19.2",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/portfolio/issues"
+  },
+  "homepage": "https://yourusername.github.io/portfolio"
+}
