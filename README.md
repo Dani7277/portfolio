@@ -1,28 +1,27 @@
-# Continuous Improvement Portfolio
+# Vivian Onyejiaka - Computer Science Portfolio
 
-A modern, responsive portfolio website demonstrating continuous improvement principles in web development. Features dark mode, project filtering, animations, and performance optimizations.
+A modern, responsive portfolio website showcasing my journey as a Computer Science student with a focus on game development and web technologies. This project demonstrates continuous improvement principles learned throughout my CS course.
 
 ## 🚀 Features
 
-### Core Features
-- **Dark/Light Mode Toggle** - User preference with localStorage persistence
-- **Project Filtering** - Filter projects by technology/category
-- **Smooth Animations** - CSS animations and scroll-based effects
-- **Responsive Design** - Mobile-first approach with breakpoints
-- **Form Validation** - Client-side validation with real-time feedback
+### Personal Portfolio Features
+- **Personal Information** - Customized for Vivian Onyejiaka, CS student in Canada
+- **Game Development Projects** - Showcasing 8 interactive projects
+- **Responsive Design** - Mobile-first approach with dark/light mode
+- **Performance Optimized** - Built with best practices in mind
 
-### Performance Optimizations
-- **Lazy Loading Images** - Intersection Observer implementation
-- **Minified Assets** - Build script for CSS/JS minification
-- **Critical CSS** - Above-the-fold CSS optimization
-- **Performance Monitoring** - Resource loading analysis
-- **Debounced Events** - Optimized event handlers
+### Project Categories
+1. **Game Development** - Interactive games built with JavaScript and game engines
+2. **Web Applications** - Full-stack and frontend projects
+3. **CS Course Projects** - Algorithm visualizers and data structure implementations
 
-### Development Features
-- **Version Control Ready** - Structured for Git commits
-- **Build Automation** - Automated minification process
-- **Performance Testing** - Built-in performance metrics
-- **Accessibility** - Semantic HTML and ARIA labels
+### Technical Features
+- **Dark/Light Mode Toggle** - User preference with localStorage
+- **Project Filtering** - Filter by game, web, or CS projects
+- **Smooth Animations** - CSS animations and scroll effects
+- **Form Validation** - Real-time feedback with validation
+- **Performance Monitoring** - Built-in performance testing
+
 
 ## 📁 Project Structure
 chapter 4/ 
@@ -37,4 +36,40 @@ index.html # Main HTML file
 ├── styles.min.css
 └── scripts.min.js
 
+
+## 🎮 Featured Projects
+
+### 1. Space Explorer Game
+2D space exploration game with asteroid dodging and score tracking.
+
+### 2. Maze Runner Game
+Procedurally generated maze game with multiple difficulty levels.
+
+### 3. Algorithm Visualizer
+Interactive visualization of sorting and pathfinding algorithms.
+
+### 4. Physics Engine Simulator
+2D physics simulation demonstrating gravity and collisions.
+
+### 5. Multiplayer Quiz Game
+Real-time multiplayer quiz game with Socket.io integration.
+
+## 🛠️ Technologies Used
+
+### Programming Languages
+- JavaScript (ES6+)
+- Python
+- Java
+- C++
+
+### Web Development
+- HTML5 & CSS3
+- React
+- Node.js
+- Git/GitHub
+
+### Game Development
+- Phaser.js
+- Unity Basics
+- HTML5 Canvas
 
