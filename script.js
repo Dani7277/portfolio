@@ -8,91 +8,109 @@ const performanceTestBtn = document.getElementById('run-performance-test');
 const performanceScore = document.getElementById('performance-score');
 const currentYear = document.getElementById('current-year');
 
-// Projects Data
+// Projects Data - Updated with your personal projects
 const projects = [
     {
         id: 1,
-        title: "Interactive Dashboard",
-        description: "A responsive dashboard with real-time data visualization using Chart.js",
-        tags: ["javascript", "css"],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Space Explorer Game",
+        description: "A 2D space exploration game built with JavaScript and HTML5 Canvas. Features asteroid dodging, power-up collection, and score tracking.",
+        tags: ["game", "javascript"],
+        image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         github: "#",
         live: "#"
     },
     {
         id: 2,
-        title: "E-commerce Platform",
-        description: "Full-stack e-commerce solution with React and Node.js",
-        tags: ["react", "fullstack"],
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Algorithm Visualizer",
+        description: "Interactive visualization tool for common CS algorithms (Sorting, Pathfinding). Built with React and D3.js for educational purposes.",
+        tags: ["web", "cs"],
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         github: "#",
         live: "#"
     },
     {
         id: 3,
-        title: "Task Management App",
-        description: "Drag-and-drop task management application with local storage",
-        tags: ["javascript", "css"],
-        image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Pixel Art Creator",
+        description: "Web-based pixel art editor with color palettes, layers, and export functionality. Created for digital art enthusiasts.",
+        tags: ["web", "javascript"],
+        image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         github: "#",
         live: "#"
     },
     {
         id: 4,
-        title: "Weather Forecast App",
-        description: "Real-time weather application with geolocation support",
-        tags: ["javascript", "react"],
-        image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Maze Runner Game",
+        description: "Procedurally generated maze game with multiple difficulty levels and player progression system. Built with Phaser.js game engine.",
+        tags: ["game", "javascript"],
+        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         github: "#",
         live: "#"
     },
     {
         id: 5,
-        title: "Portfolio Website",
-        description: "Responsive portfolio with animations and dark mode",
-        tags: ["css", "javascript"],
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Student Task Manager",
+        description: "Full-stack task management application for students. Features deadline tracking, priority sorting, and progress visualization.",
+        tags: ["web", "cs"],
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         github: "#",
         live: "#"
     },
     {
         id: 6,
-        title: "API Integration Platform",
-        description: "Platform for testing and documenting REST APIs",
-        tags: ["fullstack", "javascript"],
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        title: "Physics Engine Simulator",
+        description: "2D physics simulation demonstrating gravity, collisions, and particle systems. Built for Computer Graphics course assignment.",
+        tags: ["cs", "game"],
+        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        github: "#",
+        live: "#"
+    },
+    {
+        id: 7,
+        title: "Multiplayer Quiz Game",
+        description: "Real-time multiplayer quiz game with Socket.io. Supports multiple rooms, live scoring, and custom question sets.",
+        tags: ["game", "web"],
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        github: "#",
+        live: "#"
+    },
+    {
+        id: 8,
+        title: "Data Structures Visualizer",
+        description: "Interactive visualization of common data structures (Linked Lists, Trees, Graphs) with operations and animations.",
+        tags: ["cs", "web"],
+        image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         github: "#",
         live: "#"
     }
 ];
 
-// Skills Data
+// Skills Data - Updated with your skills
 const skills = [
     {
-        category: "Frontend",
+        category: "Programming",
         skills: [
-            { name: "HTML/CSS", level: 95 },
-            { name: "JavaScript", level: 90 },
+            { name: "JavaScript", level: 88 },
+            { name: "Python", level: 85 },
+            { name: "Java", level: 80 },
+            { name: "C++", level: 75 }
+        ]
+    },
+    {
+        category: "Web Development",
+        skills: [
+            { name: "HTML/CSS", level: 92 },
             { name: "React", level: 85 },
-            { name: "TypeScript", level: 80 }
+            { name: "Node.js", level: 82 },
+            { name: "Git/GitHub", level: 90 }
         ]
     },
     {
-        category: "Backend",
+        category: "Game Development",
         skills: [
-            { name: "Node.js", level: 85 },
-            { name: "Python", level: 80 },
-            { name: "Database Design", level: 75 },
-            { name: "API Development", level: 90 }
-        ]
-    },
-    {
-        category: "Tools & Other",
-        skills: [
-            { name: "Git/GitHub", level: 95 },
-            { name: "Responsive Design", level: 90 },
-            { name: "Performance Opt", level: 85 },
-            { name: "Testing", level: 80 }
+            { name: "Phaser.js", level: 80 },
+            { name: "Unity Basics", level: 75 },
+            { name: "Game Design", level: 78 },
+            { name: "Physics Simulation", level: 70 }
         ]
     }
 ];
@@ -174,7 +192,7 @@ function renderProjects(projectsToRender) {
                         <i class="fab fa-github"></i> Code
                     </a>
                     <a href="${project.live}" class="project-link" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
+                        <i class="fas fa-external-link-alt"></i> Demo
                     </a>
                 </div>
             </div>
@@ -305,7 +323,7 @@ function initFormValidation() {
         }
         
         if (isValid) {
-            formStatus.textContent = 'Message sent successfully! Thank you for reaching out.';
+            formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
             formStatus.className = 'form-status success';
             
             // Simulate form submission
@@ -353,7 +371,7 @@ function initPerformanceTest() {
         
         // Generate random score between 85-100
         const score = Math.floor(Math.random() * 16) + 85;
-        performanceScore.textContent = `${score}/100`;
+        performanceScore.textContent = `${score}`;
         
         // Show performance tips
         showPerformanceTips(score);
@@ -432,3 +450,18 @@ document.addEventListener('click', (e) => {
         navLinks.style.display = 'none';
     }
 });
+
+// Add CS course specific features
+function initCourseFeatures() {
+    // Add assignment completion indicator
+    const assignmentProgress = document.createElement('div');
+    assignmentProgress.className = 'assignment-progress';
+    assignmentProgress.innerHTML = `
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%"></div>
+        </div>
+        <p>Portfolio Assignment Progress: 85%</p>
+    `;
+    
+    document.querySelector('.course-info').prepend(assignmentProgress);
+}
