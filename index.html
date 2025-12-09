@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Continuous Improvement</title>
+    <title>Vivian Onyejiaka - CS Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <header>
         <nav id="main-nav">
             <div class="nav-container">
-                <a href="#" class="logo">DevPortfolio</a>
+                <a href="#" class="logo">Vivian Onyejiaka</a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -35,9 +35,9 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1 class="animate-text">Continuous Improvement Portfolio</h1>
-                <p class="subtitle">Showcasing progress through iterative development</p>
-                <a href="#projects" class="cta-button">View My Work</a>
+                <h1 class="animate-text">Vivian Onyejiaka</h1>
+                <p class="subtitle">Computer Science Student | Game Development Enthusiast</p>
+                <a href="#projects" class="cta-button">View My Projects</a>
             </div>
             <div class="scroll-indicator">
                 <i class="fas fa-chevron-down"></i>
@@ -49,21 +49,22 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>This portfolio demonstrates the principles of continuous improvement in web development. Each update brings new features, optimizations, and enhancements.</p>
-                        <p>My journey in web development focuses on learning new technologies, implementing best practices, and creating user-friendly experiences.</p>
+                        <p>Hi, I'm Vivian Onyejiaka, a Computer Science student based in Canada with a passion for game development and web technologies. This portfolio showcases my journey in computer science and demonstrates the continuous improvement principles I've learned throughout my studies.</p>
+                        <p>Each project here represents my growth as a developer - from simple web pages to interactive games and full-stack applications. I believe in learning by building, and this portfolio reflects my commitment to improving my skills through practical application.</p>
+                        <p>When I'm not coding, you can find me exploring new game mechanics, contributing to open-source projects, or hiking in the Canadian Rockies.</p>
                     </div>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-number" data-count="8">0</span>
                             <span class="stat-label">Projects</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="8">0</span>
+                            <span class="stat-number" data-count="10">0</span>
                             <span class="stat-label">Technologies</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="4">0</span>
-                            <span class="stat-label">Years Learning</span>
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Games Built</span>
                         </div>
                     </div>
                 </div>
@@ -72,13 +73,12 @@
 
         <section id="projects" class="section bg-light">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">My Projects</h2>
                 <div class="filter-controls">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
-                    <button class="filter-btn" data-filter="css">CSS</button>
-                    <button class="filter-btn" data-filter="react">React</button>
-                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="game">Games</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="cs">CS Projects</button>
                 </div>
                 <div class="projects-grid" id="projects-grid">
                     <!-- Projects will be loaded here by JavaScript -->
@@ -121,20 +121,22 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; <span id="current-year"></span> Continuous Improvement Portfolio. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> Vivian Onyejiaka. Computer Science Portfolio Assignment.</p>
                 <div class="social-links">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:student@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            <div class="performance-metrics">
-                <p>Performance Score: <span id="performance-score">Loading...</span></p>
+            <div class="course-info">
+                <p>CS Course Assignment | Continuous Improvement Portfolio</p>
                 <button id="run-performance-test" class="small-btn">Test Performance</button>
+                <p>Performance Score: <span id="performance-score">--</span>/100</p>
             </div>
         </div>
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="optimization.js"></script>
 </body>
 </html>
